@@ -190,6 +190,12 @@ WALLETS = [
         "kingdomId": "618b27c7a62e9f7da896ffca",
         "wallet": "0xbff3ed84EaDd31eB760b23633Fb9DE1A7D3C11B9",
         "name": "Vua Gà Mạng 123"
+    },
+    {
+        "CONTINENT": "61",
+        "kingdomId": "63d96abac6a8d63a56339ec0",
+        "wallet": "0x451db604532345d0b8c714465b16c5b2f1969d81",
+        "name": "Gécko"
     }
 ];
 
