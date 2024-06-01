@@ -13,6 +13,18 @@ WALLETS = [
     },
     {
         "CONTINENT": "61",
+        "kingdomId": "629c81d89e690b6d3ee5fbc3",
+        "wallet": "0xc3a1BA029e020Db0594669d61658E1f7Ab178Eb3",
+        "name": "Acidve's"
+    },
+    {
+        "CONTINENT": "61",
+        "kingdomId": "643431dab8521e1aec621731",
+        "wallet": "0xc3a1BA029e020Db0594669d61658E1f7Ab178Eb3",
+        "name": "Acidve *"
+    },
+    {
+        "CONTINENT": "61",
         "kingdomId": "653f4ab02d360f46a1e8a401",
         "wallet": "0x74A5F48baF120f10bc822D8D7554BC59872A6e70",
         "name": "Ildrial"
