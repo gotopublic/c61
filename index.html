@@ -48,10 +48,10 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this temp
                         popupMessage('Invalid dates', 5);
                     } else {
                         let fcompare = convertMiliseconds(comparison, 'd');
-                        if (fcompare >= 0 && fcompare <= 30) {
+                        if (fcompare >= 0 && fcompare <= 31) {
                             redrawLandsDatatable(fromDate, toDate, earnedLoka);
                         } else {
-                            popupMessage('The period of time cannot be greater than 1 month', 5);
+                            popupMessage('The period of time cannot be greater than 31 days', 5);
                         }
                     }
                 });
