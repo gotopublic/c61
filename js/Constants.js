@@ -208,6 +208,12 @@ WALLETS = [
         "kingdomId": "63d96abac6a8d63a56339ec0",
         "wallet": "0x451db604532345d0b8c714465b16c5b2f1969d81",
         "name": "Gécko"
+    },
+    {
+        "CONTINENT": "61",
+        "kingdomId": "65138741ed6236730ad2d128",
+        "wallet": "0xeB9aC56f3158d921a9E964598a376855D64B0D45",
+        "name": "Hedge"
     }
 ];
 
