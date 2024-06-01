@@ -276,7 +276,7 @@ drawLandsDatatable = function () {
 };
 
 redrawLandsDatatable = function (fromDate, toDate, earnedLoka) {
-    let periods = getWeeksFromDate(fromDate, toDate, 30);
+    let periods = getWeeksFromDate(fromDate, toDate, 31);
     if (isEmpty(earnedLoka)) {
         popupMessage("You have to fill the earned lokas from all the lands first.", 5);
     } else {
