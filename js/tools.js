@@ -262,12 +262,32 @@ drawLandsDatatable = function () {
                         "bProcessing": true
                     });
                     document.getElementsByClassName('topBar')[0].insertAdjacentHTML('beforeend',
-                            '<div id="dateId">\n\
+                            '<div id="datProf">\n\
+                                    <div id="dateId">\n\
                                     <input id="datefrom" type="date" value="' + currentDate + '"/>\n\
                                     <input type="button" id="goButton" value="➤"/>\n\
                                     <input id="dateto" type="date" value="' + currentDate + '"/>\n\
                                     <input type="number" step="0.01" id="earnedLoka" placeholder="Earned LOKA">\n\
-                                    <input type="button" id="dateButton" value="GO"/>');
+                                    <input type="button" id="dateButton" value="GO"/>\n\
+                                    </div>\n\
+                                    <div id="contProfit">\n\
+                                    <label for "contPercentage" id="cPercentageLabel">C61 Profit Percentage</label>\n\
+                                    <select name="contPercentage" id="contPercentage">\n\
+                                    <option value="0">0%</option>\n\
+                                    <option value="10">10%</option>\n\
+                                    <option value="20">20%</option>\n\
+                                    <option value="30">30%</option>\n\
+                                    <option value="40">40%</option>\n\
+                                    <option value="50">50%</option>\n\
+                                    <option value="60">60%</option>\n\
+                                    <option value="70">70%</option>\n\
+                                    <option value="80">80%</option>\n\
+                                    <option value="90">90%</option>\n\
+                                    <option value="100">100%</option>\n\
+                                    </select>\n\
+                                    <input type="text" id="cProfit" value="" placeholder="C61 Total LOKA Profit" readonly/>\n\
+                                    </div>\n\
+                                    </div>');
                 }
                 count++;
             }
@@ -281,6 +301,12 @@ redrawLandsDatatable = function (fromDate, toDate, earnedLoka) {
         popupMessage("You have to fill the earned lokas from all the lands first.", 5);
     } else {
         if (periods !== null) {
+            let parsedEarnedLoka = parseFloat(earnedLoka);
+            let continentProfitPercentage = document.getElementById("contPercentage").value;
+            let cProfitPercentage = !isEmpty(continentProfitPercentage) ? parseFloat(continentProfitPercentage/100) : 0;
+            let returnedLoka = parsedEarnedLoka * PERCENTAGE;
+            let continentProfit = returnedLoka * cProfitPercentage;
+            let playersProfit = returnedLoka - continentProfit;
             let lokaDatatable = $('#lokaDatatable').DataTable();
             let periodsLength = periods.length;
             let landsLength = LANDS.length;
@@ -291,7 +317,9 @@ redrawLandsDatatable = function (fromDate, toDate, earnedLoka) {
             let cleared = false;
             let totalDevPoints = parseFloat(0);
             let devPrice = 0;
-            let returnedTotalProfit = parseFloat(earnedLoka) * PERCENTAGE;
+            let cProfit = document.getElementById("cProfit");
+            cProfit.removeAttribute("placeholder");
+            cProfit.value = continentProfit+" LOKA";
             for (var i = 0; i < periodsLength; i++) {
                 let datesArray = periods[i].split(" ");
                 let startDate = datesArray[0], endDate = datesArray[1];
@@ -336,7 +364,7 @@ redrawLandsDatatable = function (fromDate, toDate, earnedLoka) {
                                 totalDevPoints += parseFloat(record.devPoints);
                             }
                         }
-                        devPrice = returnedTotalProfit / totalDevPoints;
+                        devPrice = playersProfit / totalDevPoints;
                         for (var z = 0; z < objLength; z++) {
                             let record = datatableObjectsWithSum[z];
                             let profit = (parseFloat(record.sum) * devPrice).toFixed(3);
@@ -473,6 +501,4 @@ function sortByKey(array, key) {
         var y = b[key];
         return ((x < y) ? -1 : ((x > y) ? 1 : 0));
     });
-}
-;
-
+};
