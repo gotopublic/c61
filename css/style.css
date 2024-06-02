@@ -27,16 +27,55 @@ tbody > tr, tfoot > tr{
     display: flex;
     align-self: center;
 }
-#dateId{
+#dateId, #contProfit{
     display:-webkit-flex;
     display: flex;
     -webkit-flex-direction: row;
     flex-direction: row;
     flex-flow: nowrap;
     justify-content: space-around;
-    /*align-content: center;*/
     align-self: center;
 }
+#datProf{
+    display:-webkit-flex;
+    display: flex;
+    -webkit-flex-direction: row;
+    flex-direction: row;
+    flex-flow: nowrap;
+    justify-content: space-around;
+    align-self: center;
+    margin-top: 20px;
+}
+#earnedLoka{
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+    padding: 2px;
+    background-color: #ffff00;
+    border: 0.1vw inset #999999;
+    border-radius: 0.05vw;
+}
+#contProfit, #contPercentage, #cProfit{
+    margin-left: 10px;
+}
+#cPercentageLabel, #contPercentage{
+    height: 35px;
+}
+#cPercentageLabel{
+    line-height: 35px;
+}
+#cProfit{
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+    padding: 2px;
+    background-color: #ffff00;
+    border: 0.1vw inset #999999;
+    border-radius: 0.05vw;
+    height: inherit;
+    color: #000000;
+}
+
 #landButton, #datefrom, #dateto, #dateButton{
     height: 35px;
     align-self: center;
@@ -107,8 +146,8 @@ tbody > tr, tfoot > tr{
 .dtsp-searchPanes{
     background-color: #fff !important;
 }
-@media screen and (max-width: 767px) {
-    .topBar {
+@media screen and (max-width: 860px) {
+    .topBar, #datProf {
         display:-webkit-flex !important;
         display: flex !important;
         -webkit-flex-direction: column !important;
@@ -118,16 +157,31 @@ tbody > tr, tfoot > tr{
         align-items: center !important;
         flex-wrap: nowrap !important;
     }
+    #lokaDatatable_filter, #lokaDatatable_length, #lokaDatatable_paginate{
+        margin-top: 20px !important;
+    }
+    #contProfit{
+        margin: 20px;
+    }
 }
-#earnedLoka{
-    display: flex;
-    align-items: center;
-    margin-left: 10px;
-    padding: 2px;
-    background-color: #ffff00;
-    border: 0.1vw inset #999999;
-    border-radius: 0.05vw;
+@media screen and (max-width: 520px) {
+    #dateId, #contProfit {
+        display:-webkit-flex !important;
+        display: flex !important;
+        -webkit-flex-direction: column !important;
+        flex-direction: column !important;
+        flex-flow: column !important;
+        justify-content: center !important;
+        align-items: center !important;
+        flex-wrap: nowrap !important;
+    }
+    
+    select, input, #lokaDatatable_paginate, #earnedLoka, #dateButton, #cProfit{
+        margin-top: 20px !important;
+        width: auto !important;
+    }
 }
+
 #popupMessage{
     width: 30%;
     height: auto;
@@ -142,15 +196,3 @@ tbody > tr, tfoot > tr{
     padding: 0.5vw;
     z-index: 10000;
 }
-
-/*@media screen and (max-width: 640px) {
-    .dataTables_wrapper .dataTables_length,
-    .dataTables_wrapper .dataTables_filter {
-        float: none;
-        text-align: center;
-    }
-    .dataTables_wrapper .dataTables_filter {
-        margin-top: 0.5em;
-    }
-}*/
-
