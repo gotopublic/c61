@@ -54,8 +54,8 @@ getWeeksFromDate = function (fromDate, toDate, maxDays) {
         let periods = [];
         var diff = moment.duration(moment(toDate).diff(moment(fromDate)));
         let weeks = Math.floor(diff.asWeeks());
-        let days = diff.days();
-        let daysLeftWithoutWeeks = diff.days() % 7;
+        let days = diff.asDays();
+        let daysLeftWithoutWeeks = days % 7;
         let startDate = fromDate;
         let endDate;
         if (fcompare === 0) {
@@ -72,6 +72,7 @@ getWeeksFromDate = function (fromDate, toDate, maxDays) {
             }
         }
 //        console.log(periods);
+//        console.log(days);
         return periods.length > 0 ? periods : null;
     }
     return null;
