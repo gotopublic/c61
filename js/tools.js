@@ -302,7 +302,6 @@ redrawLandsDatatable = function (fromDate, toDate, earnedLoka) {
         popupMessage("You have to fill the earned lokas from all the lands first.", 5);
     } else {
         if (periods !== null) {
-            console.log(periods);
             let parsedEarnedLoka = parseFloat(earnedLoka);
             let continentProfitPercentage = document.getElementById("contPercentage").value;
             let cProfitPercentage = !isEmpty(continentProfitPercentage) ? parseFloat(continentProfitPercentage/100) : 0;
