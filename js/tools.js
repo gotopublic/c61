@@ -268,7 +268,7 @@ drawLandsDatatable = function () {
                                     <input id="datefrom" type="date" value="' + currentDate + '"/>\n\
                                     <input type="button" id="goButton" value="➤"/>\n\
                                     <input id="dateto" type="date" value="' + currentDate + '"/>\n\
-                                    <input type="number" step="0.01" id="earnedLoka" placeholder="Earned LOKA">\n\
+                                    <input type="number" min="0" step="0.01" id="earnedLoka" placeholder="Earned LOKA">\n\
                                     <input type="button" id="dateButton" value="GO"/>\n\
                                     </div>\n\
                                     <div id="contProfit">\n\
