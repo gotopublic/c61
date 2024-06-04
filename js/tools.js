@@ -272,7 +272,7 @@ drawLandsDatatable = function () {
                                     <input type="button" id="dateButton" value="GO"/>\n\
                                     </div>\n\
                                     <div id="contProfit">\n\
-                                    <label for "contPercentage" id="cPercentageLabel">C61 Profit Percentage</label>\n\
+                                    <label id="cPercentageLabel">C61 Profit Percentage</label>\n\
                                     <select name="contPercentage" id="contPercentage">\n\
                                     <option value="0">0%</option>\n\
                                     <option value="10">10%</option>\n\
