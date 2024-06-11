@@ -226,6 +226,12 @@ WALLETS = [
         "kingdomId": "62a36588a9e20f029ee33749",
         "wallet": "0x7F85544A3C37bfc052b95587905c802dD80d9339",
         "name": "☯ ПΣMΣƧIƧ_UP ☯"
+    },
+    {
+        "CONTINENT": "61",
+        "kingdomId": "657baee42094d2159c7e6d8a",
+        "wallet": "0x5b242815ea33b40a07fab1b2a223316b72610e8a",
+        "name": "ULAN ™"
     }
 ];
 
