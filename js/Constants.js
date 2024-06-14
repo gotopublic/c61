@@ -232,6 +232,12 @@ WALLETS = [
         "kingdomId": "657baee42094d2159c7e6d8a",
         "wallet": "0x5b242815ea33b40a07fab1b2a223316b72610e8a",
         "name": "ULAN ™"
+    },
+    {
+        "CONTINENT": "61",
+        "kingdomId": "6214c6e045334248c52b2e41",
+        "wallet": "0xe91b53d999b08dbdf40e170206ab840cb1c9cc11",
+        "name": "Beniwal"
     }
 ];
 
