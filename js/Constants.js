@@ -238,6 +238,12 @@ WALLETS = [
         "kingdomId": "6214c6e045334248c52b2e41",
         "wallet": "0xe91b53d999b08dbdf40e170206ab840cb1c9cc11",
         "name": "Beniwal"
+    },
+    {
+        "CONTINENT": "61",
+        "kingdomId": "6485ab912852f44a25e97570",
+        "wallet": "0xc888b14d91B1c6001D53e221778849d300d1DCA1",
+        "name": "꧁ Espanuy ꧂"
     }
 ];
 
