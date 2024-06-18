@@ -244,6 +244,18 @@ WALLETS = [
         "kingdomId": "6485ab912852f44a25e97570",
         "wallet": "0xc888b14d91B1c6001D53e221778849d300d1DCA1",
         "name": "꧁ Espanuy ꧂"
+    },
+    {
+        "CONTINENT": "61",
+        "kingdomId": "65571f0ab8f95f191c953d0a",
+        "wallet": "0xc888b14d91B1c6001D53e221778849d300d1DCA1",
+        "name": "꧁ Espanuy 2 ꧂"
+    },
+    {
+        "CONTINENT": "61",
+        "kingdomId": "656633fa749ba17d7b5555df",
+        "wallet": "0xc888b14d91B1c6001D53e221778849d300d1DCA1",
+        "name": "꧁ Espanuy 3 ꧂"
     }
 ];
 
