@@ -256,6 +256,12 @@ WALLETS = [
         "kingdomId": "656633fa749ba17d7b5555df",
         "wallet": "0xc888b14d91B1c6001D53e221778849d300d1DCA1",
         "name": "꧁ Espanuy 3 ꧂"
+    },
+    {
+        "CONTINENT": "61",
+        "kingdomId": "6564a486d5967a7f60035f64",
+        "wallet": "0x90b95287088d503d27fa3d41e5e1a6bbacd907bd",
+        "name": "Dragon.mix □"
     }
 ];
 
