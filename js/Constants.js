@@ -262,6 +262,12 @@ WALLETS = [
         "kingdomId": "6564a486d5967a7f60035f64",
         "wallet": "0x90b95287088d503d27fa3d41e5e1a6bbacd907bd",
         "name": "Dragon.mix □"
+    },
+    {
+        "CONTINENT": "61",
+        "kingdomId": "660a76af38cf5eda8992bfcc",
+        "wallet": "0x88CAa81eC7A5e57a60BB36a795B20e5A9D40E929",
+        "name": "XtraRicE"
     }
 ];
 
